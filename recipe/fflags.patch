@@ -1,0 +1,22 @@
+From 5cf7f5af432efc4faf596d9eb302a9301e7c7487 Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Sun, 21 Feb 2021 17:36:22 +0100
+Subject: [PATCH] Update arch.make.in
+
+---
+ arch.make.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch.make.in b/arch.make.in
+index 217f8a4a..7982903a 100644
+--- a/arch.make.in
++++ b/arch.make.in
+@@ -13,7 +13,7 @@ FPP=@FPP@
+ FC=@FC@
+ RANLIB=@RANLIB@
+ 
+-FFLAGS=@FCFLAGS@
++FFLAGS=@FFLAGS@
+ FPPFLAGS=@FPPFLAGS@
+ LDFLAGS=@LDFLAGS@
+ 
