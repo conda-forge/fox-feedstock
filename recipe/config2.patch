@@ -1,0 +1,25 @@
+From 71909c595302f70fbdad945461f8c23875c7f978 Mon Sep 17 00:00:00 2001
+From: Pietro Delugas <pdelugas@sissa.it>
+Date: Wed, 4 Apr 2018 11:50:00 +0200
+Subject: [PATCH] readding in config the clause for old arm machines
+
+As suggested I reinserted the clause for detecting machines which
+report arm*
+---
+ config/config.guess | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/config/config.guess b/config/config.guess
+index 31f47d25..553ee1dd 100755
+--- a/config/config.guess
++++ b/config/config.guess
+@@ -829,6 +829,9 @@ EOF
+     i*86:Minix:*:*)
+ 	echo ${UNAME_MACHINE}-pc-minix
+ 	exit ;;
++    arm*:Linux:*:*)
++	echo ${UNAME_MACHINE}-unknown-linux-gnu
++	exit ;;
+     aarch64:Linux:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-linux-gnu
+ 	exit ;;

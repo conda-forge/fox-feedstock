@@ -1,0 +1,23 @@
+From ece43315d7d0db071705437e882d5685ebfb4700 Mon Sep 17 00:00:00 2001
+From: Pietro Delugas <pdelugas@sissa.it>
+Date: Thu, 26 Oct 2017 09:20:22 +0200
+Subject: [PATCH] modified the config.guess file in order to enable the
+ configure script to recognise the aarch64 architecture: fix by Jason Woods
+
+---
+ config/config.guess | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/config/config.guess b/config/config.guess
+index 2b03b482..31f47d25 100755
+--- a/config/config.guess
++++ b/config/config.guess
+@@ -829,7 +829,7 @@ EOF
+     i*86:Minix:*:*)
+ 	echo ${UNAME_MACHINE}-pc-minix
+ 	exit ;;
+-    arm*:Linux:*:*)
++    aarch64:Linux:*:*)
+ 	echo ${UNAME_MACHINE}-unknown-linux-gnu
+ 	exit ;;
+     avr32*:Linux:*:*)
