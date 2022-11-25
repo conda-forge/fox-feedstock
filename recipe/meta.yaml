@@ -11,9 +11,12 @@ source:
   patches:
     - io.patch
     - fflags.patch
+    - config1.patch
+    - config2.patch
+    - config3.patch
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
 
 requirements:
