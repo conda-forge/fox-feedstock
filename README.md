@@ -1,11 +1,11 @@
-About fox
-=========
+About fox-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fox-feedstock/blob/main/LICENSE.txt)
 
 Home: http://homepages.see.leeds.ac.uk/~earawa/FoX/
 
 Package license: Zlib AND BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fox-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Fortran library for XML
 
@@ -24,7 +24,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>Travis</td>
+    <td>
+      <a href="https://app.travis-ci.com/conda-forge/fox-feedstock">
+        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/fox-feedstock/main.svg?label=Linux">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -49,6 +56,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9410&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fox-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9410&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/fox-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_" alt="variant">
                 </a>
               </td>
             </tr><tr>
