@@ -23,6 +23,7 @@ requirements:
   build:
     - gnuconfig  # [unix]
     - {{ compiler('fortran') }}
+    - {{ stdlib("c") }}
     - m4
     - make
 
